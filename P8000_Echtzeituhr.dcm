@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 72421
+D Real Time Clock Module
+K RTC
+$ENDCMP
+#
+$CMP RR6
+D 6 resistors
+K R DEV
+$ENDCMP
+#
+$CMP RR7
+D 6 resistors
+K R DEV
+$ENDCMP
+#
+#End Doc Library
