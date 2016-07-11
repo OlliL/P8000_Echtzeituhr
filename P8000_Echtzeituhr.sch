@@ -36,8 +36,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "P8000 Echtzeituhr"
-Date "2016-07-03"
-Rev "1.6"
+Date "2016-07-11"
+Rev "1.7"
 Comp "Oliver Lehmann"
 Comment1 ""
 Comment2 ""
@@ -181,7 +181,7 @@ Text Label 3850 2500 0    60   ~ 0
 A12
 Entry Wire Line
 	3650 2400 3750 2500
-Text Label 2650 2550 0    21   ~ 0
+Text Label 2650 2500 0    21   ~ 0
 /B/W
 Text Label 3850 1200 0    60   ~ 0
 A9
@@ -271,7 +271,7 @@ F 3 "" H 1650 4950 50  0000 C CNN
 $EndComp
 Text Label 900  2500 0    21   ~ 0
 /R/W
-Text Label 2650 2350 0    21   ~ 0
+Text Label 2650 2300 0    21   ~ 0
 /MRESET
 Text Label 2350 5400 0    60   ~ 0
 /WR
@@ -467,15 +467,14 @@ $EndComp
 $Comp
 L 74LS02 D2
 U 4 1 577186A0
-P 10250 4900
-F 0 "D2" H 10250 4950 50  0000 C CNN
-F 1 "74LS02" H 10300 4850 50  0000 C CNN
-F 2 "Housings_DIP:DIP-14_W7.62mm" H 10250 4900 50  0001 C CNN
-F 3 "" H 10250 4900 50  0000 C CNN
-	4    10250 4900
+P 1800 3450
+F 0 "D2" H 1800 3500 50  0000 C CNN
+F 1 "74LS02" H 1850 3400 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 1800 3450 50  0001 C CNN
+F 3 "" H 1800 3450 50  0000 C CNN
+	4    1800 3450
 	1    0    0    -1  
 $EndComp
-NoConn ~ 10850 4900
 $Comp
 L VCC #PWR08
 U 1 1 57719F6F
@@ -549,11 +548,10 @@ NoConn ~ 2850 2000
 NoConn ~ 2850 2100
 NoConn ~ 2850 2200
 NoConn ~ 2850 2150
-NoConn ~ 2850 2250
-NoConn ~ 2850 2300
+NoConn ~ 2850 2350
 NoConn ~ 2850 2400
 NoConn ~ 2850 2450
-NoConn ~ 2850 2500
+NoConn ~ 2850 2550
 NoConn ~ 2850 2600
 $Comp
 L VCC #PWR010
@@ -613,12 +611,12 @@ $EndComp
 $Comp
 L VCC #PWR015
 U 1 1 5771BDAC
-P 10050 4700
-F 0 "#PWR015" H 10050 4550 50  0001 C CNN
-F 1 "VCC" H 10050 4850 50  0000 C CNN
-F 2 "" H 10050 4700 50  0000 C CNN
-F 3 "" H 10050 4700 50  0000 C CNN
-	1    10050 4700
+P 1600 3250
+F 0 "#PWR015" H 1600 3100 50  0001 C CNN
+F 1 "VCC" H 1600 3400 50  0000 C CNN
+F 2 "" H 1600 3250 50  0000 C CNN
+F 3 "" H 1600 3250 50  0000 C CNN
+	1    1600 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -635,12 +633,12 @@ $EndComp
 $Comp
 L GND #PWR017
 U 1 1 5771C284
-P 10050 5100
-F 0 "#PWR017" H 10050 4850 50  0001 C CNN
-F 1 "GND" H 10050 4950 50  0000 C CNN
-F 2 "" H 10050 5100 50  0000 C CNN
-F 3 "" H 10050 5100 50  0000 C CNN
-	1    10050 5100
+P 1600 3650
+F 0 "#PWR017" H 1600 3400 50  0001 C CNN
+F 1 "GND" H 1600 3500 50  0000 C CNN
+F 2 "" H 1600 3650 50  0000 C CNN
+F 3 "" H 1600 3650 50  0000 C CNN
+	1    1600 3650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -768,11 +766,9 @@ Wire Wire Line
 Wire Bus Line
 	3650 750  3650 4350
 Wire Wire Line
-	3200 2750 2600 2750
+	2600 2750 3200 2750
 Wire Wire Line
-	2600 2750 2600 2550
-Wire Wire Line
-	2600 2550 2850 2550
+	2600 2500 2600 2750
 Wire Wire Line
 	3750 1200 5550 1200
 Wire Wire Line
@@ -781,11 +777,6 @@ Wire Wire Line
 	5550 1900 5550 1200
 Wire Wire Line
 	7100 2000 7550 2000
-Wire Wire Line
-	7550 2200 7300 2200
-Wire Wire Line
-	7300 2200 7300 2000
-Connection ~ 7300 2000
 Wire Wire Line
 	4150 4150 3750 4150
 Wire Wire Line
@@ -828,7 +819,7 @@ Connection ~ 3550 4650
 Wire Wire Line
 	2800 6050 6450 6050
 Wire Wire Line
-	2800 6050 2800 5050
+	2800 5050 2800 6050
 Wire Wire Line
 	2800 5050 4150 5050
 Wire Wire Line
@@ -851,11 +842,9 @@ Wire Wire Line
 	850  2500 1050 2500
 Connection ~ 850  4850
 Wire Wire Line
-	4150 4750 2550 4750
+	2550 4750 4150 4750
 Wire Wire Line
-	2550 4750 2550 2350
-Wire Wire Line
-	2550 2350 2850 2350
+	2550 2300 2550 4750
 Wire Bus Line
 	10250 750  10250 3550
 Wire Bus Line
@@ -921,7 +910,7 @@ Wire Wire Line
 	9750 5450 9750 5300
 Connection ~ 9750 5300
 Wire Wire Line
-	9450 4800 9450 5450
+	9450 5300 9450 5450
 Connection ~ 9450 5300
 Wire Wire Line
 	9450 5900 10300 5900
@@ -935,11 +924,6 @@ Connection ~ 9750 5900
 Wire Wire Line
 	10050 5750 10050 5900
 Connection ~ 10050 5900
-Wire Wire Line
-	9650 4800 9450 4800
-Wire Wire Line
-	9650 5000 9450 5000
-Connection ~ 9450 5000
 Wire Wire Line
 	1650 2600 1950 2600
 Wire Wire Line
@@ -983,7 +967,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 2100 5900 2100
 Wire Wire Line
-	3200 1400 3200 2750
+	3200 2750 3200 1400
 Wire Wire Line
 	4150 1600 3750 1600
 Wire Wire Line
@@ -998,11 +982,6 @@ Wire Wire Line
 	4150 2700 3750 2700
 Text Label 3850 2100 0    60   ~ 0
 A5
-Wire Wire Line
-	4150 2000 4050 2000
-Wire Wire Line
-	4050 2000 4050 2100
-Connection ~ 4050 2100
 Wire Wire Line
 	5950 3850 5950 4750
 Wire Wire Line
@@ -1090,4 +1069,34 @@ F 3 "" H 2100 1850 60  0000 C CNN
 	1    2100 1850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2850 2500 2600 2500
+Wire Wire Line
+	2850 2300 2550 2300
+Wire Wire Line
+	7550 2200 7350 2200
+Wire Wire Line
+	2500 2800 2500 2250
+Wire Wire Line
+	2500 2250 2850 2250
+Text Label 2650 2250 0    21   ~ 0
+/I/O
+Wire Wire Line
+	7350 2200 7350 2000
+Connection ~ 7350 2000
+Wire Wire Line
+	950  3550 1200 3550
+Wire Wire Line
+	950  2800 950  3550
+Wire Wire Line
+	950  2800 2500 2800
+Wire Wire Line
+	1200 3350 950  3350
+Connection ~ 950  3350
+Wire Wire Line
+	3300 2000 4150 2000
+Wire Wire Line
+	3300 2000 3300 3450
+Wire Wire Line
+	3300 3450 2400 3450
 $EndSCHEMATC
