@@ -1,5 +1,5 @@
 Bauteil		Bezeichnung						Reichelt-Art.Nr.		Anzahl		 Preis
-C1		Vielschicht-Keramikkondensator 100N, 20%		Z5U-2,5 100N			2		 0,04
+C1		Vielschicht-Keramikkondensator 100N, 20%		Z5U-2,5 100N			3		 0,04
 R1		Metallschichtwiderstand 18,7 K-Ohm			METALL 18,7K			2		 0,082
 VD1		Planar Epitaxial Schaltdiode, DO35, 100V, 0,15A		1N 4148				2		 0,04
 BT1		Knopfzellenhalter für Ø 20 mm				KZH 20-1			1		 0,64
